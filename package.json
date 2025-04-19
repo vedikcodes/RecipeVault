@@ -2,6 +2,7 @@
   "name": "recipevault",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://vedikcodes.github.io/Recipe_vault",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,11 +1,10 @@
-import React from "react";
 import Axios from "axios";
-import { useState } from "react";
+import React, { useState } from "react";
 import Spinner from "./components/Spinner";
 
+import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 import RecipeTile from "./components/RecipeTile";
-import Footer from "./components/Footer";
 
  
  
@@ -25,7 +24,8 @@ function App() {
   const YOUR_APP_ID = `184c1341`;
   const YOUR_APP_KEY = "67b63668da095685d2e909987146809f";
 
-  const url = `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;
+  const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;
+
 
 
   const getRecipeInfo = async () => {
